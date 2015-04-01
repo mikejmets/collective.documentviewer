@@ -67,17 +67,17 @@
     layer=".interfaces.ILayer" />
 
   <subscriber
-    for="plone.dexterity.interfaces.IDexterityContent
+    for="bb.toaster.documentartefact.IDocumentArtefact
          zope.lifecycleevent.interfaces.IObjectAddedEvent"
     handler=".subscribers.handle_file_creation" />
 
   <subscriber
-    for="plone.dexterity.interfaces.IDexterityContent
+    for="bb.toaster.documentartefact.IDocumentArtefact
          zope.lifecycleevent.interfaces.IObjectModifiedEvent"
     handler=".subscribers.handle_file_creation" />
 
   <subscriber
-    for="plone.dexterity.interfaces.IDexterityContent
+    for="bb.toaster.documentartefact.IDocumentArtefact
          Products.CMFCore.interfaces.IActionSucceededEvent"
     handler=".subscribers.handle_workflow_change" />
 
