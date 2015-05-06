@@ -45,7 +45,7 @@
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
     class=".views.AsyncMonitor"
     template="templates/async-monitor.pt"
-    permission="cmf.ManagePortal"
+    permission="cmf.ModifyPortalContent"
     layer=".interfaces.ILayer" />
 
   <browser:page
