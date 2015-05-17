@@ -14,7 +14,7 @@ CONVERTABLE_TYPES = {
                                        'odt', 'sxw', 'wks', 'wpd',
                                        'vor', 'sdw')),
     'excel': DocType(u'Excel File', ('xls', 'xlsx', 'xlt', 'ods', 'csv', )),
-    'ppt': DocType(u'Powerpoint', ('ppt', 'pptx', 'pps', 'ppa', 'pwz',
+    'ppt': DocType(u'Powerpoint', ('ppt', 'pptx', 'pps', 'ppsx', 'ppa', 'pwz',
                                    'odp', 'sxi')),
     'html': DocType(u'HTML File', ('htm', 'html', 'xhtml')),
     'rft': DocType(u'RTF', ('rtf',)),
