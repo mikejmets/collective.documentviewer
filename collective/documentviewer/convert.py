@@ -398,6 +398,11 @@ class Converter(object):
         fw = IFileWrapper(context)
         filename = fw.filename
         language = IOCRLanguage(context).getLanguage()
+        if self.doc_type is None:
+            self.doc_type = getDocumentType(
+                                context,
+                                gsettings.auto_layout_file_types)
+        print self.doc_type.requires_conversion
         args = dict(sizes=(('large', gsettings.large_size),
                            ('normal', gsettings.normal_size),
                            ('small', gsettings.thumb_size)),
