@@ -402,7 +402,6 @@ class Converter(object):
             self.doc_type = getDocumentType(
                                 context,
                                 gsettings.auto_layout_file_types)
-        print self.doc_type.requires_conversion
         args = dict(sizes=(('large', gsettings.large_size),
                            ('normal', gsettings.normal_size),
                            ('small', gsettings.thumb_size)),
